@@ -1,2 +1,15 @@
--- bootstrap lazy.nvim, LazyVim and your plugins
-require("config.lazy")
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
+require('options')
+
+require('plugins')
+
+require('config.telescope')
+require('cmp-config')
+require('lsp')
+
+require('keymaps')
+
+vim.cmd('colorscheme rose-pine')
+
