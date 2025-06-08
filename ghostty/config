@@ -1,0 +1,22 @@
+shell-integration = zsh
+
+window-width = 100
+window-height = 50
+
+theme = dark:iTerm2 Pastel Dark Background,light:GitHub-Light-Default
+
+font-family = DeJavu Mono
+font-style = Regular
+font-size = 12
+
+cursor-style = block
+cursor-style-blink = true
+
+mouse-hide-while-typing = true
+shell-integration-features = no-cursor
+focus-follows-mouse = true
+link-url = true
+
+keybind = super+r=reload_config 
+keybind = super+f=toggle_fullscreen
+
