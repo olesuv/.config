@@ -81,6 +81,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias la="ls -la"
 alias update="sudo apt-get update && sudo apt-get upgrade && flatpak update"
+# alias update="softwareupdate -l && sudo softwareupdate -i -a && brew update && brew upgrade && brew upgrade --cask && brew cleanup && brew doctor"
 alias vi="nvim"
 alias n="neofetch"
 alias speed="speedtest-cli"
