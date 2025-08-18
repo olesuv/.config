@@ -18,6 +18,9 @@ Plug('nvim-telescope/telescope-fzf-native.nvim', { ['do'] = 'make' })
 
 Plug('esmuellert/nvim-eslint')
 
+Plug('nvimtools/none-ls.nvim')
+Plug('MunifTanjim/prettier.nvim')
+
 Plug 'rose-pine/neovim'
 
 vim.call('plug#end')

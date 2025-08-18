@@ -6,6 +6,7 @@ require('options')
 require('plugins')
 
 require('config.telescope')
+require('config.prettier')
 require('cmp-config')
 require('lsp')
 

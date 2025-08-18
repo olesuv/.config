@@ -5,18 +5,19 @@ local cmp_nvim_lsp = require('cmp_nvim_lsp')
 local on_attach = function(client, bufnr)
   -- You can add keymaps specific to LSP here
   -- For example:
-	-- local keymap = vim.keymap.set
-	-- keymap('n', 'K', vim.lsp.buf.hover, { buffer = bufnr })
-	-- keymap('n', 'gd', vim.lsp.buf.definition, { buffer = bufnr })
+  -- local keymap = vim.keymap.set
+  -- keymap('n', 'K', vim.lsp.buf.hover, { buffer = bufnr })
+  -- keymap('n', 'gd', vim.lsp.buf.definition, { buffer = bufnr })
 end
 
 -- Use LSPs with nvim-cmp
 local capabilities = cmp_nvim_lsp.default_capabilities()
 
 -- A list of all the LSP servers we want to set up
+-- The tsserver has been replaced with the recommended ts_ls
 local servers = {
   'lua_ls',
-  'typescript-language-server',
+  'ts_ls',
   'marksman',
   'pyright',
 }
@@ -26,10 +27,14 @@ for _, server in ipairs(servers) do
   lspconfig[server].setup({
     on_attach = on_attach,
     capabilities = capabilities,
+    -- Add the root pattern here for all servers
+    -- You can customize this per server if needed
+    root_dir = lspconfig.util.root_pattern('package.json', '.git'),
   })
 end
 
 -- Special configuration for lua_ls (sumneko_lua)
+-- This is a good practice to keep server-specific settings separate
 lspconfig.lua_ls.setup({
   on_attach = on_attach,
   capabilities = capabilities,
@@ -39,7 +44,7 @@ lspconfig.lua_ls.setup({
         globals = { 'vim' },
       },
       workspace = {
-        library = { vim.env.VIMRUNTIME },
+        library = vim.env.VIMRUNTIME,
         checkThirdParty = false,
       },
     },
@@ -60,3 +65,4 @@ require('nvim-eslint').setup({
     end
   end,
 })
+
