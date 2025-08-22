@@ -1,0 +1,18 @@
+[core]
+	compression = 9
+	whitespace = error
+	preloadindex = true
+
+[advice]
+	statusHints = false
+
+[status]
+	branch = true
+	showStash = true
+	showUntrackedFiles = all
+
+[diff]
+	context = 3
+	renames = copies
+	interHunkContext = 10
+
