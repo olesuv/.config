@@ -1,56 +1,52 @@
 {
-    "assistant": {
-        "default_model": {
-            "provider": "zed.dev",
-            "model": "claude-3-5-sonnet-latest"
-        },
-        "version": "2"
+  "icon_theme": "Colored Zed Icons Theme Dark",
+  "agent": {
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini"
     },
-    "telemetry": { "metrics": false },
-    // basics
-    "ui_font_size": 16,
-    "buffer_font_size": 16,
-    "theme": {
-        "mode": "system",
-        "light": "One Light",
-        "dark": "One Dark"
+    "default_profile": "ask"
+  },
+  "show_edit_predictions": false,
+  "telemetry": { "metrics": false },
+  // basics
+  "ui_font_size": 16,
+  "buffer_font_size": 15.0,
+  "theme": {
+    "mode": "system",
+    "light": "Fleet Light",
+    "dark": "Fleet Dark"
+  },
+  "buffer_font_fallbacks": ["Hack Nerd Font"],
+  "buffer_font_family": "Hack Nerd Font",
+  "tabs": { "git_status": true },
+  "terminal": {
+    "copy_on_select": true,
+    "font_family": "Hack Nerd Font",
+    "line_height": "comfortable"
+  },
+  // prettier
+  "format_on_save": "on",
+  "ensure_final_newline_on_save": true,
+  "formatter": {
+    "code_actions": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "languages": {
+    "TSX": {
+      "show_edit_predictions": false
     },
-    "buffer_font_fallbacks": ["Hack Nerd Font"],
-    "buffer_font_family": "Hack Nerd Font",
-    "disabled_in": ["comment", "string"],
-    "tabs": { "git_status": true },
-    "terminal": {
-        "copy_on_select": true,
-        "font_family": "Hack Nerd Font",
-        "line_height": "comfortable"
-    },
-    // prettier
-    "format_on_save": "on",
-    "ensure_final_newline_on_save": true,
-    "formatter": {
-        "code_actions": {
-            "source.fixAll.eslint": true,
-            "source.organizeImports": true
-        }
-    },
-    "languages": {
-        "TypeScript": {
-            "tab_size": 2,
-            "code_actions_on_format": {
-                "source.fixAll.eslint": true
-            }
-        },
-        "JavaScript": {
-            "tab_size": 2,
-            "code_actions_on_format": {
-                "source.fixAll.eslint": true
-            }
-        },
-        "Python": { "tab_size": 4 },
-        "JSONC": { "tab_size": 4 },
-        "JSON": { "tab_size": 4 },
-        "JSDoc": { "tab_size": 4 }
-    },
-    // vim mode
-    "vim_mode": true
+    "TypeScript": { "tab_size": 2 },
+    "JavaScript": { "tab_size": 2 },
+    "Python": { "tab_size": 4 },
+    "JSONC": { "tab_size": 2 },
+    "JSON": { "tab_size": 2 },
+    "JSDoc": { "tab_size": 2 },
+    "CSS": { "tab_size": 2 }
+  },
+  "vertical_scroll_margin": 32,
+  // vim mode
+  "vim_mode": true,
+  "relative_line_numbers": true
 }
