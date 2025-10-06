@@ -80,8 +80,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias la="ls -la"
-alias update="sudo apt-get update && sudo apt-get upgrade && flatpak update"
-# alias update="softwareupdate -l && sudo softwareupdate -i -a && brew update && brew upgrade && brew upgrade --cask && brew cleanup && brew doctor"
+alias update="brew update && brew upgrade && brew upgrade --cask && brew cleanup && brew doctor"
 alias vi="nvim"
 alias n="neofetch"
 alias speed="speedtest-cli"
@@ -99,32 +98,3 @@ alias gs="git status"
 alias gsw="git switch"
 alias gcb="git checkout -b"
 
-# snap neovim
-export PATH=$PATH:/snap/bin
-
-# golnag
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$GOPATH/bin
-
-# redis
-export PATH="$PATH:/snap/redis/current/bin"
-
-# clang
-export CC=clang
-export CXX=clang++
-
-# wayland for plt
-export QT_QPA_PLATFORM=wayland
-
-# zed
-alias z='flatpak run dev.zed.Zed --wait'
-
-# pnpm
-export PNPM_HOME="/home/suphomie/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-
-# lua
-export PATH="$PATH:/home/lsp-servers/lua/bin"
