@@ -16,3 +16,6 @@
 	renames = copies
 	interHunkContext = 10
 
+[user]
+	name = Oleh Suvorov
+	email = olegsuv.dev@gmail.com
