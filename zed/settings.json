@@ -1,9 +1,13 @@
 {
   "icon_theme": "JetBrains New UI Icons (Dark)",
   "agent": {
-    "inline_assistant_model": {
+    "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-5-mini"
+      "model": "claude-sonnet-4"
+    },
+    "inline_assistant_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet"
     },
     "default_profile": "ask"
   },

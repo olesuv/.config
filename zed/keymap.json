@@ -26,8 +26,8 @@
       "c f": "project_panel::NewFile",
       "d f": "project_panel::Delete",
       "r f": "project_panel::Rename",
-      "ctrl-l": "workspace::ToggleRightDock",
-      "ctrl-b": "workspace::ToggleLeftDock",
+      "ctrl-r": "workspace::ToggleRightDock",
+      "ctrl-l": "workspace::ToggleLeftDock",
       "ctrl-/": "terminal_panel::Toggle"
     }
   }
