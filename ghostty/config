@@ -3,7 +3,7 @@ shell-integration = zsh
 window-width = 100
 window-height = 50
 
-theme = dark:iTerm2 Pastel Dark Background,light:GitHub-Light-Default
+theme = dark:iTerm2 Pastel Dark Background,light:GitHub Light Default
 
 font-family = DeJavu Mono
 font-style = Regular
