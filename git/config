@@ -19,3 +19,7 @@
 [user]
 	name = Oleh Suvorov
 	email = olegsuv.dev@gmail.com
+
+[push]
+	autoSetupRemote = true
+
